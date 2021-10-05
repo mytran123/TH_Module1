@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Vowels = ["u", "e", "o", "a", "i"]
+    function countVowel(arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (Vowels.indexOf(arr[i]) === -1) {
+                return false;
+            } else {
+                count++;
+            }
+        } return count;
+    }
+
+    let character =[];
+    let characterEnter = prompt("Nhập vào chuỗi kí tự");
+    character = [characterEnter];
+    document.write(countVowel(character));
+</script>
+</body>
+</html>
